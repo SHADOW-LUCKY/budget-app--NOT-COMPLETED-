@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Budget App</title>
+ </head>
+ <body>
+  <!--navegacion (NAVIGATION)-->
+  <nav class="navbar navbar-dark bg-dark" id="232">
+   <div class="container">
+    <a href="#" class="navbar-brand">budget app by lucky</a>
+   </div>
+  </nav>
+  <!--main (cont principal)-->
+  <div class="container">
+   <div class="row pt-3">
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <form id="makebudget">
+        <div class="row pt-2">
+         <div class="form-group">
+          <input
+           required
+           class="form-control"
+           type="text"
+           id="namebud"
+           placeholder="name your budget"
+          />
+         </div>
+        </div>
+        <!--bud name-->
+        <div class="row pt-2">
+         <div class="form-group">
+          <input
+           id="initbud"
+           class="form-control"
+           type="number"
+           min="0"
+           max=""
+           required
+           placeholder="initial budget"
+          />
+         </div>
+        </div>
+        <!--init bud-->
+        <div class="row pt-2">
+         <div class="form-group">
+          <h6>type of money</h6>
+          <select class="form-select" id="monuse">
+           <option value="(?)">Other</option>
+           <option value="(¥)">Yen(¥)</option>
+           <option value="(₿)">Bitcoin(₿)</option>
+           <option value="(₩)">Won(₩)</option>
+           <option value="($)">Dolar($)</option>
+           <option value="(£)">Pound(£)</option>
+           <option value="(€)">Euro(€)</option>
+          </select>
+         </div>
+        </div>
+        <!--type mon-->
+        <div class="row pt-2">
+         <div class="form-group">
+          <textarea
+           id="description"
+           cols="8"
+           rows="5"
+           placeholder="what will you use it for?"
+           class="form-control"
+          ></textarea>
+         </div>
+        </div>
+        <!--desc bud-->
+        <div class="row pt-2">
+         <div class="form-group">
+          <h6>fecha de creacion</h6>
+          <input class="form-control" type="date" id="date" />
+         </div>
+        </div>
+        <div class="row pt-2">
+         <!--save-->
+         <div class="form-group">
+          <button type="submit" class="btn btn-block btn-primary">Save</button>
+         </div>
+        </div>
+        <!--save bud-->
+        <!--end form-->
+       </form>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-8">
+     <div id="tasks edit"></div>
+    </div>
+   </div>
+   <div class="row pt-3">
+    <div class="col-md-4">
+     <div class="card">
+      <div class="card-body">
+       <form id="editbudget">
+        <div class="row pt-2">
+         <div class="form-group">
+          <input
+           required
+           class="form-control"
+           type="text"
+           id="nameed"
+           placeholder="budget to change"
+          />
+         </div>
+        </div>
+        <!--bud name-->
+        <div class="row pt-2">
+         <div class="form-group">
+          <input
+           id="editbal"
+           class="form-control"
+           type="number"
+           min=""
+           max=""
+           required
+           placeholder="money involved, if loss use(-)"
+          />
+         </div>
+        </div>
+        <div class="row pt-2">
+         <!--save-->
+         <div class="form-group">
+          <button type="submit" class="btn btn-block btn-primary">Save</button>
+         </div>
+        </div>
+        <!--save bud-->
+        <!--end form-->
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--script used-->
+  <script src="java.js"></script>
+ </body>
+</html>
+<!-- <div class="col-md-8">
+    <div id="tasks"></div>
+   </div>
+ -->
